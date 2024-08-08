@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"/>
+  
+    <title>Dev Marketing Gmail</title>
+  
+</head>
+
+<body>
+  <!-- Navbar starts here -->
+  <nav class="navbar navbar-expand-lg shadow-lg fixed-top" style="background: rgba(83, 122, 238, 1);">
+    <div class="container-fluid">
+      <!-- Left aligned logo -->
+      <img src="Panda.png" alt="logo" style="height: 70px;">
+      <!-- Right aligned bell icon -->
+      <div class="ms-auto px-4">
+        <i class="fa fa-bell" style="font-size: 30px; color: white;"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar ends here -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidenav starts here (col-md-2) -->
+      <div class="col-md-2 position-fixed d-flex flex-column d-none d-lg-flex d-md-flex" style="top: 80px; height: calc(100vh - 80px); background: #343A40;">
+        <!-- Sidenav toggle button -->
+        <div class="px-3 mt-4 text-white fs-4">
+          <i class="bi bi-arrow-left-square"></i>
+        </div>
+        <!-- Sidenav menu starts here -->
+        <div style="overflow-y: auto; height: 65vh" class="scrollbar-none">
+          <ul class="nav flex-column text-white px-1 mt-2 text-nowrap" style="font-size: 18px;">
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="Dev_Dashboard.html">
+                <i class="fas fa-th-large me-2"></i> Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="#" data-toggle="submenu" data-target="#configSubmenu" style="display: flex; align-items: center;">
+                <i class="fas fa-sliders-h me-2"></i> Config
+                <i class="fas fa-chevron-left ms-auto arrow-icon"></i>
+              </a>
+              <!-- Config submenu starts here -->
+              <ul class="collapse" id="configSubmenu" style="display: none;">
+                <li class="nav-item ms-5">
+                  <a class="nav-link text-white d-flex align-items-center p-0" href="#">User</a>
+                </li>
+                <li class="nav-item ms-5">
+                  <a class="nav-link text-white d-flex align-items-center p-0" href="#">Permission</a>
+                </li>
+              </ul>
+              <!-- Config submenu ends here -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="SMS_Template.html">
+                <i class="fas fa-comment-dots me-2"></i> SMS Template
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="Dev_Subscriber.html">
+                <i class="fas fa-users me-2"></i> Subscriber
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="" data-toggle="submenu" data-target="#marketingSubmenu" style="display: flex; align-items: center;">
+                <i class="fas fa-bullhorn me-2"></i> Marketing
+                <i class="fas fa-chevron-left ms-auto arrow-icon"></i>
+              </a>
+              <!-- Marketing submenu starts here -->
+              <ul class="collapse" id="marketingSubmenu" style="display: none;">
+                <li class="nav-item ms-5">
+                  <a class="nav-link text-white d-flex align-items-center p-0" href="Dev_Marketing_SMS.html">SMS</a>
+                </li>
+                <li class="nav-item ms-5">
+                  <a class="nav-link text-white d-flex align-items-center p-0" href="Dev_Marketing_Gmail.html">Email</a>
+                </li>
+                <li class="nav-item ms-5">
+                  <a class="nav-link text-white d-flex align-items-center p-0" href="Dev_Marketing_Voucher.html">Voucher</a>
+                </li>
+              </ul>
+              <!-- Marketing submenu ends here -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="#">
+                <i class="fas fa-money-check-alt me-2"></i> Payment
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="#">
+                <i class="fas fa-clock me-2"></i> Trial
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="#">
+                <i class="fas fa-chart-line me-2"></i> Report
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="Notification.html">
+                <i class="fas fa-bell me-2"></i> Notice
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="Package.html">
+                <i class="fas fa-box-open me-2"></i> Package
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Sidenav menu ends here -->
+        <div class="mt-auto"></div>
+        <button class="btn text-white w-100" style="background: #4E5760; font-size: 18px;">
+          <i class="bi bi-box-arrow-left"></i> Exit
+        </button>
+      </div>
+      <!-- Sidenav ends here -->
+ <!-- Main content starts here (col-md-10) -->
+ <div class="col-md-10 offset-md-2" style="margin-top: 90px;">
+    <div class="container my-3">
+        <div class="d-flex justify-content-between align-items-center  p-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);" >
+            <div>
+             <h2>Marketing</h2>
+            </div> 
+             <div class="px-2">
+                <select class=" shadow py-2  pr-5 pl-2 " style="border: none; border-radius: 5px; font-size: larger;" id="" >
+                    <option value="">Package </option>
+
+                    <option value="option1">Package 1</option>
+                    <option value="option2">Package 2</option>
+                    <option value="option3">Package 3</option>
+                </select>            
+             </div>           
+         </div>
+
+      
+
+       
+
+        <div class=" shadow  mt-4">
+            <div class="d-flex justify-content-between align-items-center mt-3 p-3 " >
+                <div>
+                 <h6>All Customers(1000)</h6>
+                </div> 
+                          
+             </div>
+             <div class="row my-3  px-3 ">
+                      
+                <div class="col-md-1 mb-3">
+                    <h6 style="white-space: nowrap;">Title</h6>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class=" " style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);">
+                        <input type="text" id="" class="w-100 py-2" style="border: none;">
+                     
+                    </div>
+                </div>
+               
+    
+                <div class="col-md-5 mb-3">
+                </div>
+           
+            </div>
+
+
+            <div class="row mt-4  px-3 ">
+                      
+                <div class="col-md-1 ">
+                    <h6 style="white-space: nowrap;">Body</h6>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);">
+                       
+                        <div>
+                            <input type="text" id="" class="w-100 py-5 " style="border: none; ">
+                        </div>
+                        
+                     
+                    </div>
+                   
+                </div>
+               
+    
+                <div class="col-md-5 justify-content-between">
+                    
+    
+                </div>
+
+                <div class="m-2 p-4 d-flex justify-content-end align-items-center ">
+               
+                    <button class="btn btn-primary">Send</button>
+                  </div>
+           
+            </div>
+        </div>
+
+
+
+        <div class=" mt-3 p-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);">
+            <h3>All Mails</h3>
+
+        </div>
+
+        <div class="d-flex mt-4 justify-content-end">
+            <input type="text" class="form-control rounded-start rounded-0 w-25" placeholder="Search here...">
+            <button class="btn btn-primary rounded-end rounded-0"><i class="fa fa-search"></i></button>
+        </div>
+
+
+        <div class="mt-4 ">
+            <table class="table table-striped shadow"  >
+                <thead style="font-family: Inter; font-size: 20px;">
+                    <tr>
+                        <th class="col-xl-1">SL</th>
+                        <th class="col"> Title </th>
+                        <th class="col"> Body</th>
+                        <th class="col">Date</th>
+                        <th class="col-xl-1">Action</th>
+                    
+                    </tr>
+                </thead>
+                <tbody style="white-space: nowrap;">
+                    <tr>
+                        <td>1</td>
+                        <td>System Update</td>
+                        <td>There will be an update ofr your package so the server will be down......</td>
+                        <td>15/06/24</td>
+                        <td ><button class="btn btn-primary btn-sm w-75">View</button> </td>     
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>System Update</td>
+                        <td>There will be an update ofr your package so the server will be down......</td>
+                        <td>15/06/24</td>
+                        <td ><button class="btn btn-primary btn-sm w-75">View</button> </td>     
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>System Update</td>
+                        <td>There will be an update ofr your package so the server will be down......</td>
+                        <td>15/06/24</td>
+                        <td ><button class="btn btn-primary btn-sm w-75">View</button> </td>     
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>System Update</td>
+                        <td>There will be an update ofr your package so the server will be down......</td>
+                        <td>15/06/24</td>
+                        <td ><button class="btn btn-primary btn-sm w-75">View</button> </td>     
+                    </tr>
+
+                  
+                </tbody>
+            </table>
+        </div>
+       
+
+
+         
+
+       
+
+    </div>
+
+
+          </div>
+
+      <!-- Main content ends here -->
+
+  <!-- jQuery and Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script>
+    document.querySelectorAll('[data-toggle="submenu"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const submenu = document.querySelector(targetId);
+        const arrowIcon = this.querySelector('.arrow-icon');
+        
+        // Hide other submenus
+        document.querySelectorAll('.collapse').forEach(sub => {
+          if (sub !== submenu) {
+            sub.style.display = 'none';
+            sub.previousElementSibling.querySelector('.arrow-icon').classList.remove('fa-chevron-down');
+            sub.previousElementSibling.querySelector('.arrow-icon').classList.add('fa-chevron-left');
+          }
+        });
+
+        // Toggle the clicked submenu
+        if (submenu.style.display === 'none' || submenu.style.display === '') {
+          submenu.style.display = 'block';
+          arrowIcon.classList.remove('fa-chevron-left');
+          arrowIcon.classList.add('fa-chevron-down');
+        } else {
+          submenu.style.display = 'none';
+          arrowIcon.classList.remove('fa-chevron-down');
+          arrowIcon.classList.add('fa-chevron-left');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
